@@ -1,7 +1,7 @@
 
 [
-  @if (is_array($contact_point))
-    @foreach($contact_point as $index => $contact)
+  @if (is_array($contactPoint))
+    @foreach($contactPoint as $index => $contact)
       {
       @foreach($contact as $property => $value)
         "{{ $property }}" : "{{ $value }}",
