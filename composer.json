@@ -1,0 +1,23 @@
+{
+    "name": "tpv/seo",
+    "description": "",
+    "authors": [
+        {
+            "name": "stevenkaspar",
+            "email": "srkaspar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Tpv\\Seo\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
