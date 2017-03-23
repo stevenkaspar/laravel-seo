@@ -1,4 +1,4 @@
-<?php namespace Tpv\Seo;
+<?php namespace Kaspar\Seo;
 
 class Seo
 {

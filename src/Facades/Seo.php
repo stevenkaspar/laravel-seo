@@ -1,4 +1,4 @@
-<?php namespace Tpv\Seo\Facades;
+<?php namespace Kaspar\Seo\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,4 +1,4 @@
-<?php namespace Tpv\Seo;
+<?php namespace Kaspar\Seo;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class SeoServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('tpv/seo');
+		$this->package('kaspar/seo');
 	}
 
 	/**
@@ -29,13 +29,13 @@ class SeoServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		//
-		// $this->app->bind('seo', 'Tpv\Seo\Seo');
+		// $this->app->bind('seo', 'Kaspar\Seo\Seo');
 		$this->app['seo'] = $this->app->share(function($app){
 	    return new Seo;
 	  });
 		$this->app->booting(function(){
 		  $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-		  $loader->alias('Seo', 'Tpv\Seo\Facades\Seo');
+		  $loader->alias('Seo', 'Kaspar\Seo\Facades\Seo');
 		});
 	}
 
