@@ -26,7 +26,7 @@ class Seo
 
 
 	public function contactPointStuct($contact_point){
-		return \View::make('seo::contact_point', array('contact_point' => $contact_point));
+		return \View::make('seo::contact_point', array('contactPoint' => $contact_point));
 	}
 	public function blogStruct($blog){
 		return \View::make('seo::blog',           array('blog'         => $blog));
@@ -47,6 +47,10 @@ class Seo
 	}
 	public function Product($product){
 		return $this->toScript($this->productStruct($product));
+	}
+	// any
+	public function Any($any){
+		return $this->toScript(json_encode($any));
 	}
 	// meta tag
 	public function Meta($name, $content){
